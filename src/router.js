@@ -19,6 +19,30 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/About.vue")
+    },
+    {
+      path: "/characters",
+      name: "character-list",
+      component: () =>
+        import(/* webpackChunkName: "character" */ "./views/Characters.vue")
+    },
+    {
+      path: "/characters/:characterName",
+      name: "character-detail",
+      component: () =>
+        import(/* webpackChunkName: "character-detail" */ "./views/CharacterDetail.vue"),
+      props: true
+    },
+    {
+      path: "/scoreboard",
+      name: "scoreboard",
+      component: () => import("./views/Scoreboard.vue")
+    },
+    {
+      path: "/player/:playerName",
+      name: "player-detail",
+      component: () => import("./views/PlayerDetail.vue"),
+      props: true
     }
   ]
 });
