@@ -75,7 +75,7 @@ const characters = {
       "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/sandor-clegane-1920.jpg/_jcr_content/renditions/cq5dam.web.980.551.jpeg"
   }),
   Mountain: new CharacterInfo({
-    name: "The Hound",
+    name: "The Mountain",
     imageUrl:
       "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/episodes/4/37/episode-37-03-1920.jpg/_jcr_content/renditions/cq5dam.web.980.551.jpeg"
   }),
