@@ -190,6 +190,70 @@ const players = {
       Beric: 0,
       Euron: 1
     }
+  },
+  Ryan: {
+    answers: {
+      Jon: 1,
+      Dany: 0,
+      Sansa: 0,
+      Arya: 0,
+      Bran: 1,
+      Cersei: 1,
+      Jaime: 1,
+      Tyrion: 1,
+      Yara: 1,
+      Theon: 0,
+      Melisandre: 1,
+      Jorah: 1,
+      Hound: 1,
+      Mountain: 1,
+      Samwell: 2,
+      Gilly: 2,
+      Sam: 0,
+      Varys: 0,
+      Brienne: 1,
+      Davos: 2,
+      Bronn: 0,
+      Podrick: 0,
+      Tormund: 2,
+      "Grey-Worm": 1,
+      Missandei: 0,
+      Gendry: 0,
+      Beric: 1,
+      Euron: 1
+    }
+  },
+  Charles: {
+    answers: {
+      Jon: 2,
+      Dany: 0,
+      Sansa: 0,
+      Arya: 1,
+      Bran: 1,
+      Cersei: 0,
+      Jaime: 1,
+      Tyrion: 0,
+      Yara: 0,
+      Theon: 1,
+      Melisandre: 1,
+      Jorah: 0,
+      Hound: 1,
+      Mountain: 1,
+      Samwell: 1,
+      Gilly: 2,
+      Sam: 1,
+      Varys: 0,
+      Brienne: 1,
+      Davos: 0,
+      Bronn: 0,
+      Podrick: 1,
+      Tormund: 1,
+      "Grey-Worm": 0,
+      Missandei: 0,
+      Gendry: 0,
+      Beric: 2,
+      Euron: 2
+    }
   }
 };
 
