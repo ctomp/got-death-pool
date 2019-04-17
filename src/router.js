@@ -43,6 +43,11 @@ export default new Router({
       name: "player-detail",
       component: () => import("./views/PlayerDetail.vue"),
       props: true
+    },
+    {
+      path: "/comparison",
+      name: "comparison",
+      component: () => import("./views/Compare.vue")
     }
   ]
 });

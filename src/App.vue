@@ -4,6 +4,7 @@
     <h2 id="site-subheader">Death Pool</h2>
     <div id="nav">
       <router-link to="/scoreboard">Scoreboard</router-link> |
+      <router-link to="/comparison">Comparison</router-link> |
       <router-link to="/characters">Character Status</router-link>
     </div>
     <router-view class="inner-content" />
