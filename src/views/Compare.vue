@@ -8,8 +8,9 @@
             :src="character.imageUrl"
             class="row-header character-pic"
             :alt="character.name"
-            :title="character.name"
+            :title="`${character.name} [${character.status}]`"
           />
+          <div :class="['image-overlay', character.status]"></div>
         </div>
       </th>
     </thead>
@@ -44,14 +45,24 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .alive {
+  // border-width: 2px;
   background-color: green;
+  color: white;
+  // border-style: solid;
 }
 .dead {
+  // border-width: 2px;
   background-color: #db5461;
+  color: white;
 }
 .wight {
+  // border-width: 2px;
+  // border-color: #062f4f;
+  color: white;
+  font-weight: bold;
+
   background-color: #062f4f;
 }
 .cell {
@@ -62,8 +73,13 @@ export default {
   height: auto;
 }
 table {
+  // border-collapse: collapse;
   display: block;
   overflow-x: scroll;
+}
+tr {
+  border-top: 1px solid black;
+  padding: 5px;
 }
 .image-cropper {
   border: 1px solid #1e2749;
@@ -78,11 +94,31 @@ table {
   height: 100%;
   margin: 0 auto;
   margin-left: -25%;
+  position: relative;
+  opacity: 0.5;
   width: auto;
+  z-index: 10;
 }
 .guess {
-  color: white;
+  box-sizing: border-box;
   font-size: 0.8em;
+  padding: 5px;
   text-align: center;
+}
+.image-overlay {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: -31px;
+
+  &.alive {
+    background-color: green;
+  }
+  &.dead {
+    background-color: #db5461;
+  }
+  &.wight {
+    background-color: blue;
+  }
 }
 </style>

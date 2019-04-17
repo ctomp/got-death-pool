@@ -91,7 +91,8 @@ const characters = {
   }),
   Sam: new CharacterInfo({
     name: "Baby Sam",
-    imageUrl: ""
+    imageUrl:
+      "http://oohlo.com/wp-content/uploads/2016/05/babysam1-1024x629.jpg"
   }),
   Varys: new CharacterInfo({
     name: "Lord Varys",
