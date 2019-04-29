@@ -56,16 +56,19 @@ const characters = {
   }),
   Theon: new CharacterInfo({
     name: "Theon Greyjoy",
+    status: statuses[1],
     imageUrl:
       "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/theon-greyjoy-1920.jpg/_jcr_content/renditions/cq5dam.web.980.551.jpeg"
   }),
   Melisandre: new CharacterInfo({
     name: "Melisandre",
+    status: statuses[1],
     imageUrl:
       "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/melisandre-1920.jpg/_jcr_content/renditions/cq5dam.web.980.551.jpeg"
   }),
   Jorah: new CharacterInfo({
     name: "Jorah Mormont",
+    status: statuses[1],
     imageUrl:
       "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/jorah-mormont-1920.jpg/_jcr_content/renditions/cq5dam.web.980.551.jpeg"
   }),
@@ -141,6 +144,7 @@ const characters = {
   }),
   Beric: new CharacterInfo({
     name: "Beric Dondarrion",
+    status: statuses[1],
     imageUrl:
       "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/beric-dondarron-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
   }),

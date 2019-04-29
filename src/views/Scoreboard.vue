@@ -7,15 +7,18 @@
         <th>Brutality Score</th>
       </thead>
       <tbody>
-        <tr v-for="(player, key) in players" :key="key">
+        <tr v-for="player in sortedPlayers" :key="player.name">
           <td>
             <router-link
-              :to="{ name: 'player-detail', params: { playerName: key } }"
-              >{{ key }}</router-link
+              :to="{
+                name: 'player-detail',
+                params: { playerName: player.name }
+              }"
+              >{{ player.name }}</router-link
             >
           </td>
-          <td>{{ computePoints(player.answers) }}</td>
-          <td>{{ Math.round(computeBrutality(player.answers) * 100) }}%</td>
+          <td>{{ player.score }}</td>
+          <td>{{ Math.round(player.brutality * 100) }}%</td>
         </tr>
       </tbody>
     </table>
@@ -34,7 +37,35 @@ export default {
       statuses
     };
   },
-  computed: mapState(["players"]),
+  computed: {
+    sortedPlayers() {
+      console.log(this.players);
+      const playerArr = Object.keys(this.players).map(key => {
+        return { ...this.players[key], name: key };
+      });
+      if (playerArr.length === 0) {
+        return this.players;
+      }
+
+      playerArr.forEach(player => {
+        player.score = this.computePoints(player.answers);
+        player.brutality = this.computeBrutality(player.answers);
+      });
+
+      console.log(playerArr);
+
+      return playerArr.sort((player1, player2) => {
+        if (player1.score > player2.score) {
+          return -1;
+        } else if (player1.score < player2.score) {
+          return 1;
+        }
+
+        return 0;
+      });
+    },
+    ...mapState(["players"])
+  },
   methods: {
     computePoints(answers) {
       return Object.entries(answers)
