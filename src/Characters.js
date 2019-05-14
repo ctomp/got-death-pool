@@ -36,11 +36,13 @@ const characters = {
   }),
   Cersei: new CharacterInfo({
     name: "Cersei Lannister",
+    status: statuses[1],
     imageUrl:
       "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/cersei-lannister-1920.jpg/_jcr_content/renditions/cq5dam.web.980.551.jpeg"
   }),
   Jaime: new CharacterInfo({
     name: "Jaime Lannister",
+    status: statuses[1],
     imageUrl:
       "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/jamie-lannister-1920.jpg/_jcr_content/renditions/cq5dam.web.980.551.jpeg"
   }),
@@ -74,11 +76,13 @@ const characters = {
   }),
   Hound: new CharacterInfo({
     name: "The Hound",
+    status: statuses[1],
     imageUrl:
       "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/sandor-clegane-1920.jpg/_jcr_content/renditions/cq5dam.web.980.551.jpeg"
   }),
   Mountain: new CharacterInfo({
     name: "The Mountain",
+    status: statuses[1],
     imageUrl:
       "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/episodes/4/37/episode-37-03-1920.jpg/_jcr_content/renditions/cq5dam.web.980.551.jpeg"
   }),
@@ -99,6 +103,7 @@ const characters = {
   }),
   Varys: new CharacterInfo({
     name: "Lord Varys",
+    status: statuses[1],
     imageUrl:
       "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/maetser-varys-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
   }),
@@ -134,6 +139,7 @@ const characters = {
   }),
   Missandei: new CharacterInfo({
     name: "Missandei",
+    status: statuses[1],
     imageUrl:
       "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/missandei-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
   }),
@@ -150,6 +156,7 @@ const characters = {
   }),
   Euron: new CharacterInfo({
     name: "Euron Greyjoy",
+    status: statuses[1],
     imageUrl:
       "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s6/euron-greyjoy-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
   })
