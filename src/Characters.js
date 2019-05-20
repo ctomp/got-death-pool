@@ -16,6 +16,7 @@ const characters = {
   }),
   Dany: new CharacterInfo({
     name: "Daenerys Targaryen",
+    status: statuses[1],
     imageUrl:
       "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/daenarys-1920.jpg/_jcr_content/renditions/cq5dam.web.980.551.jpeg"
   }),
